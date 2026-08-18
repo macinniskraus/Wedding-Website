@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RSVP | MacInnis + Allory</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<main>
+
+<section class="rsvp-page">
+
+    <h1>
+        RSVP
+    </h1>
+
+
+    <p class="rsvp-intro">
+        Please respond below.
+    </p>
+
+
+    <form class="rsvp-form" id="rsvp-form" autocomplete="off">
+
+
+        <label>
+            WILL YOU BE ATTENDING?
+        </label>
+
+
+        <div class="radio-group">
+
+            <label>
+                <input type="radio" name="attendance" value="Yes" required>
+                JOYFULLY ACCEPT
+            </label>
+
+
+            <label>
+                <input type="radio" name="attendance" value="No">
+                REGRETFULLY DECLINE
+            </label>
+
+        </div>
+
+
+        <label>
+            GUEST NAME
+        </label>
+
+
+        <div id="guest-list">
+
+            <input 
+                type="text" 
+                name="guest"
+                placeholder="Name"
+                required
+            >
+
+        </div>
+
+
+        <button 
+            type="button" 
+            id="add-guest">
+            + ADD ANOTHER ATTENDEE
+        </button>
+
+
+        <button type="submit">
+            SUBMIT
+        </button>
+
+
+    </form>
+
+
+</div>
+
+
+</section>
+
+</main>
+
+
+<script src="rsvp.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+/* =========================
+   GLOBAL
+========================= */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f5f0;
+    color: #111;
+    font-family: "Courier New", monospace;
+}
+
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4vh 0;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero {
+    text-align: center;
+}
+
+
+h1 {
+    margin: 0;
+
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: normal;
+    letter-spacing: 0.08em;
+
+    white-space: nowrap;
+}
+
+
+.date {
+    margin-top: 12px;
+    margin-bottom: 25px;
+
+    font-size: clamp(.9rem, 1.8vw, 1.2rem);
+    letter-spacing: 0.15em;
+}
+
+
+/* =========================
+   IMAGE + OVERLAY
+========================= */
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+
+.image-container img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   LINKS OVER IMAGE
+========================= */
+
+.links {
+    position: absolute;
+
+    left: 15px;
+    bottom: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+}
+
+
+.links a {
+    color: white;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+}
+
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    main {
+        width: 88%;
+    }
+
+
+    h1 {
+        white-space: normal;
+        font-size: 2.2rem;
+    }
+
+
+    .links {
+        left: 20px;
+        bottom: 20px;
+    }
+
+}
+
+
+/* =========================
+   RSVP PAGE
+========================= */
+
+
+.rsvp-page {
+    text-align: center;
+}
+
+
+.rsvp-intro {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    letter-spacing: 0.1em;
+}
+
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+
+.rsvp-form label {
+    letter-spacing: 0.15em;
+    font-size: 0.9rem;
+}
+
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+input[type="text"] {
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid #111;
+
+    padding: 10px 0;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 1rem;
+
+}
+
+
+button {
+
+    background: none;
+
+    border: 1px solid #111;
+
+    padding: 12px;
+
+    font-family: "Courier New", monospace;
+
+    letter-spacing: 0.15em;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+    background: #111;
+    color: #f7f5f0;
+}
+
+
+#guest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#guest-list input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+#thank-you {
+
+    text-align: center;
+
+    margin-top: 60px;
+
+    letter-spacing: 0.15em;
+
+}
+
+
+#thank-you a {
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    color: #111;
+
+    text-decoration: none;
+
+    letter-spacing: 0.15em;
+
+}
+
+
+.page {
+    text-align: center;
+}
+
+
+.page a {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    color: #111;
+
+    text-decoration: none;
+
+    letter-spacing: 0.15em;
+}
+
+
+.guest-entry {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.guest-entry input {
+
+    flex: 1;
+
+}
+
+
+.remove-guest {
+
+    border: none;
+
+    padding: 0;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.1em;
+
+}
+
+
+.remove-guest:hover {
+
+    background: none;
+
+    color: #111;
+
+}
