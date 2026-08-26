@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
+/* Global */
 
 html,
 body {
@@ -16,16 +14,14 @@ body {
 }
 
 
-/* HEART CURSOR */
+/* Heart Cursor */
 
 * {
     cursor: url("images/heart-cursor.png") 16 16, auto;
 }
 
 
-/* =========================
-   PAGE CONTAINER
-========================= */
+/* Page Container */
 
 main {
     width: 90%;
@@ -36,24 +32,38 @@ main {
 }
 
 
-/* =========================
-   HEADINGS
-========================= */
+/* Typography */
 
 h1 {
     margin: 0;
 
-    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
     font-weight: normal;
+    line-height: 1.2;
     letter-spacing: 0.08em;
 
     white-space: nowrap;
 }
 
+h2 {
+    margin: 50px 0 20px;
 
-/* =========================
-   LINKS
-========================= */
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+p {
+    margin: 0;
+
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
+}
+
+
+/* Links */
 
 a {
     color: #111;
@@ -65,40 +75,38 @@ a:hover {
 }
 
 
-/* =========================
-   RETURN HOME
-========================= */
+/* Layout */
 
-.return-home {
-    display: inline-block;
-
-    margin-bottom: 40px;
-
-    letter-spacing: 0.15em;
+.indent {
+    margin-left: 3ch;
 }
 
 
-/* =========================
-   HOMEPAGE
-========================= */
+/* Return Home */
+
+.return-home {
+    display: inline-block;
+    letter-spacing: 0.15em;
+}
+
+.return-home + h1,
+.return-home + h2 {
+    margin-top: 50px;
+}
+
+
+/* Homepage */
 
 .home-page {
     text-align: center;
 }
 
 .home-page h1 {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
-.date {
-    margin-top: 12px;
-    margin-bottom: 25px;
-
-    font-size: clamp(.9rem, 1.8vw, 1.2rem);
-    letter-spacing: 0.15em;
+.home-page h2 {
+    margin: 12px 0 25px;
 }
 
 .image-container {
@@ -141,92 +149,32 @@ a:hover {
 }
 
 
-/* =========================
-   TEXT-BASED PAGES
-========================= */
+/* Text Pages */
 
 .text-page {
     text-align: left;
 }
 
 
-/* =========================
-   SCROLLING PAGES
-========================= */
+/* Scrolling */
 
 body.scroll-page {
     overflow-y: auto;
 }
 
 
-/* =========================
-   LOGISTICS PAGE
-========================= */
+/* Logistics */
 
 .logistics-section {
     margin-top: 50px;
-
-    text-align: left;
 }
 
-.logistics-heading {
-    margin: 0 0 30px;
-
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: normal;
-    letter-spacing: 0.08em;
+.logistics-section p {
+    margin-bottom: 5px;
 }
 
 
-/* DATE / CATEGORY HEADINGS */
-
-.logistics-section h3 {
-    margin: 30px 0 10px;
-
-    font-size: 0.9rem;
-    font-weight: bold;
-    letter-spacing: 0.15em;
-}
-
-
-/* EVENT TITLES */
-
-.event-title {
-    margin: 0 0 5px;
-
-    font-size: 0.9rem;
-    font-weight: normal;
-    letter-spacing: 0.15em;
-}
-
-
-/* EVENT DETAILS */
-
-.event-detail {
-    margin: 0 0 5px;
-    padding-left: 3ch;
-
-    font-size: 0.9rem;
-    font-weight: normal;
-    letter-spacing: 0.05em;
-}
-
-
-/* GENERAL LOGISTICS BODY TEXT */
-
-.logistics-section p:not(.event-title):not(.event-detail) {
-    margin: 0;
-
-    font-size: 0.9rem;
-    font-weight: normal;
-    letter-spacing: 0.05em;
-    line-height: 1.7;
-}
-
-
-/* =========================
-   GALLERY PAGE
-========================= */
+/* Gallery */
 
 .gallery-page {
     max-width: 800px;
@@ -235,7 +183,6 @@ body.scroll-page {
 }
 
 .gallery-page h1 {
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -254,23 +201,10 @@ body.scroll-page {
 }
 
 
-/* =========================
-   RSVP PAGE
-========================= */
+/* RSVP */
 
 .rsvp-page {
     text-align: left;
-}
-
-.rsvp-page h1 {
-    text-align: left;
-}
-
-.rsvp-intro {
-    margin-top: 20px;
-    margin-bottom: 50px;
-
-    letter-spacing: 0.1em;
 }
 
 .rsvp-form {
@@ -287,9 +221,7 @@ body.scroll-page {
 }
 
 
-/* =========================
-   RSVP RADIO HEARTS
-========================= */
+/* RSVP Hearts */
 
 .radio-group {
     display: flex;
@@ -298,8 +230,14 @@ body.scroll-page {
 }
 
 .radio-group label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    width: fit-content;
+
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.7;
 }
 
 .radio-group label:hover {
@@ -328,9 +266,7 @@ body.scroll-page {
 }
 
 
-/* =========================
-   RSVP FORM INPUTS
-========================= */
+/* Form */
 
 input[type="text"] {
     width: 100%;
@@ -364,13 +300,12 @@ input[type="text"] {
 }
 
 
-/* =========================
-   BUTTONS
-========================= */
+/* Buttons */
+
+/* Buttons */
 
 button {
     background: none;
-
     border: 1px solid #111;
 
     padding: 12px;
@@ -383,9 +318,6 @@ button:hover {
     background: #111;
     color: #f7f5f0;
 }
-
-
-/* REMOVE GUEST */
 
 .remove-guest {
     border: none;
@@ -402,9 +334,7 @@ button:hover {
 }
 
 
-/* =========================
-   THANK YOU
-========================= */
+/* Thank You */
 
 .thanks-page {
     text-align: center;
@@ -419,9 +349,7 @@ button:hover {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* Mobile */
 
 @media (max-width: 600px) {
 
