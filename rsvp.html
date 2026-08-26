@@ -13,11 +13,14 @@
 </head>
 
 
-<body>
+<body class="scroll-page">
 
-<main>
+<main class="text-page rsvp-page">
 
-<section class="rsvp-page">
+    <a href="index.html" class="return-home">
+        RETURN HOME
+    </a>
+
 
     <h1>
         RSVP
@@ -25,70 +28,72 @@
 
 
     <p class="rsvp-intro">
-        Please respond below.
+        Will you be joining us?
     </p>
 
 
-    <form class="rsvp-form" id="rsvp-form" autocomplete="off">
-
-
-        <label>
-            WILL YOU BE ATTENDING?
-        </label>
-
+    <form class="rsvp-form" id="rsvp-form">
 
         <div class="radio-group">
 
             <label>
-                <input type="radio" name="attendance" value="Yes" required>
-                JOYFULLY ACCEPT
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="yes"
+                    required
+                >
+                YES, HAPPILY!
             </label>
 
-
             <label>
-                <input type="radio" name="attendance" value="No">
-                REGRETFULLY DECLINE
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="no"
+                >
+                NO, REGRETFULLY.
             </label>
 
         </div>
 
 
         <label>
-            GUEST NAME
+            NAME
         </label>
 
 
         <div id="guest-list">
 
-            <input 
-                type="text" 
-                name="guest"
-                placeholder="Name"
-                required
-            >
+            <div class="guest-entry">
+
+                <input
+                    type="text"
+                    name="guest"
+                    required
+                >
+
+            </div>
 
         </div>
 
 
-        <button 
-            type="button" 
-            id="add-guest">
-            + ADD ANOTHER ATTENDEE
+        <button
+            type="button"
+            id="add-guest"
+        >
+            ADD ANOTHER GUEST
         </button>
 
 
-        <button type="submit">
+        <button
+            type="submit"
+            id="submit-button"
+        >
             SUBMIT
         </button>
 
-
     </form>
-
-    <a href="index.html" class="return-home">
-    RETURN HOME
-</a>
-
-</section>
 
 </main>
 
