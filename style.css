@@ -306,12 +306,20 @@ input[type="text"] {
 
 button {
     background: none;
+    color: #111;
+
     border: 1px solid #111;
 
     padding: 12px;
 
     font-family: "Courier New", monospace;
+    font-size: 1rem;
     letter-spacing: 0.15em;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    cursor: inherit;
 }
 
 button:hover {
